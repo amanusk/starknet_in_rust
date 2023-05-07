@@ -1,6 +1,6 @@
 # CLI Usage Example
 
-For this example we will be using the contract [example_contract.cairo](../contract_execution_examples/example_contract.cairo)
+For this example we will be using the contract [example_contract.cairo](..examples/contract_execution/example_contract.cairo)
 
 ## Prerequisites
 
@@ -18,7 +18,7 @@ target/release/starknet-rs starknet_in_rust
 ### Compile the contract using starknet-compile
 
 ```=bash
-starknet-compile contract_execution_examples/example_contract.cairo --output example_contract.json --abi example_contract_abi.json
+starknet-compile examples/contract_execution/example_contract.cairo --output example_contract.json --abi example_contract_abi.json
 ```
 
 ### Declare the contract
@@ -53,7 +53,7 @@ Transaction hash: 0x13699fd1061f0668fc44bc96c348626abfff406010eef89624b3ddae6e02
 
 ### Invoke a contract method
 
- Invoke the method `increase_balance` with the input 1234 in order to update the `balance` storage variable
+Invoke the method `increase_balance` with the input 1234 in order to update the `balance` storage variable
 
 ```=bash
 target/release/starknet-rs invoke \
